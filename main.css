@@ -53,18 +53,25 @@ main{
   "p p p"
   "p p p"
   "span span span";
+  background-color : rgb(252, 244, 235);
 }
 
 .store-item > span{
   width: 100px;
+  grid-row : 100;
 }
 
 .store-item > p{
+  padding : 5px;
+}
+
+div > p:first-of-type {
+  font-weight : bold;
 }
 
 img{
   height: 100px;
-  width: 50%;
+  width: 75%;
 }
 
 footer {
