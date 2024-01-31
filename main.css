@@ -14,6 +14,7 @@ html {
   "footer"
   ;
 }
+
 header{
   padding: 10px;
   background-color: antiquewhite;
@@ -46,14 +47,19 @@ main{
 .store-item{
   margin: 20px;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "img img img"
-  "p p p"
-  "p p p"
-  "span span span";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  border: 2px solid black;
   background-color : rgb(252, 244, 235);
+}
+
+.store-item > img{
+  align-self: center;
+  justify-self: center;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  border: 2px solid black
 }
 
 .store-item > span{
@@ -65,13 +71,19 @@ main{
   padding : 5px;
 }
 
-div > p:first-of-type {
-  font-weight : bold;
+.store-item > div{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-self: center;
+  margin: 5px;
+  height: 90%;
+  width: 90%;
 }
 
-img{
-  height: 100px;
-  width: 75%;
+div > p:first-of-type {
+  font-weight : bold;
 }
 
 footer {
